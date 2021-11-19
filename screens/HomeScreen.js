@@ -38,7 +38,6 @@ export const HomeScreen = () => {
   const dispatch = useDispatch();
   const [ref, isEmpty] = useHookWithRefCallbackCheckIfEmptyInput();
 
-  console.log("[isEmpty]", isEmpty);
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
       <View style={tw`p-5`}>

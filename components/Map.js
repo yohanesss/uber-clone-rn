@@ -58,7 +58,7 @@ export const Map = () => {
     >
       {origin && destination && (
         <MapViewDirections
-          lineDashPattern={[6]}
+          lineDashPattern={[0]}
           origin={origin.description}
           destination={destination.description}
           apikey={GOOGLE_MAPS_API_KEY}

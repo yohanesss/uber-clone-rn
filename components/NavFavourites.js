@@ -72,7 +72,6 @@ export const NavFavourites = ({ isDestination }) => {
                   `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${redOrigin.description}&destinations=${destination}&key=${GOOGLE_MAPS_API_KEY}`
                 );
                 const resJson = await res.json();
-                console.log("[resJson]", resJson);
                 dispatch(setTravelTimeInformation(resJson.rows[0].elements[0]));
                 navigation.navigate("RideOptionsCard");
               };
